@@ -1,0 +1,16 @@
+<h1 class='card__name'>{{name}}</h1>
+<div class='card__container'>
+    <div class='card__meta'>
+        <h2 class='card__title'>Capital:<span
+                class='card__info'
+            >{{capital}}</span></h2>
+        <h2 class='card__title'>Population:
+            <span class='card__info'>{{population}} people</span></h2>
+        <h2 class='card__title'>Languages:</h2>
+        <ul>
+            {{#each languages}}
+                <li class='card__info'>{{this}}</li>
+            {{/each}}</ul>
+    </div>
+    <img class='card__image' src='{{flag}}' alt='flag' />
+</div>
